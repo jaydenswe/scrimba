@@ -1,24 +1,53 @@
 body {
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 800;
   font-style: normal;
   margin: 0;
+  background-color: #1F2937;
+  color: #FFFFFF;
+}
+
+p {
+  color: black;
 }
 
 .container {
   padding: 50px;
+  color: white;
 }
 
 .underline {
-  border-bottom: 1px black solid;
+  border-bottom: 1px #2F3E53 solid;
 }
 
 .password-box {
   border: 1px solid black;
 }
 
+#btn {
+  background-color: #10B981;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 10px;
+  color: white;
+  font-family: inherit;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #D5D4D8;
+  font-weight: 0;
+}
+
+#highlight {
+  color: #55F991;
+}
+
+#bold {
+  font-weight: bold;
+}
+
 .passwords {
-  display: flex;
-  width: 400px;
+  color: #55F991;
 }
