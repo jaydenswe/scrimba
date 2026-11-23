@@ -3,5 +3,22 @@ body {
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
+  margin: 0;
 }
 
+.container {
+  padding: 50px;
+}
+
+.underline {
+  border-bottom: 1px black solid;
+}
+
+.password-box {
+  border: 1px solid black;
+}
+
+.passwords {
+  display: flex;
+  width: 400px;
+}
