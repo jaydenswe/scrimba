@@ -42,6 +42,28 @@ p {
   font-size: 15px;
   margin-top: 30px;
   margin-bottom: 10px;
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#txt {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.inputs {
+  display: flex;
+  gap: 20px;
 }
 
 .description {

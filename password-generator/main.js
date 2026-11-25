@@ -6,14 +6,17 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let btnEl = document.getElementById("btn") 
 let password1El = document.getElementById("password1")
 let password2El = document.getElementById("password2")
+let textEl = document.getElementById("txt")
 
 // Create function to create password
 function generatePassword() {
     // Declare 2 strings to store the generated password
     let password1 = ""
     let password2 = ""
+    let passwordLength = textEl.value
+    console.log(passwordLength)
     // Loop through each character
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < passwordLength; i++) {
         // Generate random index numbers to randomise character selection
         let randomNum = Math.floor(Math.random() * characters.length )
         let randomNum1 = Math.floor(Math.random() * characters.length )
