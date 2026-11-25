@@ -11,6 +11,13 @@ p {
   color: black;
 }
 
+.passwords p:not(:empty) {
+    background-color: #273549;
+    padding: 10px;
+    border-radius: 6px;
+    color: #55F991;
+}
+
 .container {
   padding: 50px;
   color: white;
@@ -47,13 +54,13 @@ p {
 .passwords {
   display: flex;
   gap: 20px;
-  background-color: #55F991;
+  flex: 1;
 }
 
 
-.box1, .box2 {
+/* .box1, .box2 {
     border: 1px solid black;
-}
+} */
 
 #border {
   border-bottom: 1px #2F3E53 solid;
