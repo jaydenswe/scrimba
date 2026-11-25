@@ -16,10 +16,6 @@ p {
   color: white;
 }
 
-.underline {
-  border-bottom: 1px #2F3E53 solid;
-}
-
 .password-box {
   border: 1px solid black;
 }
@@ -49,5 +45,16 @@ p {
 }
 
 .passwords {
-  color: #55F991;
+  display: flex;
+  gap: 20px;
+  background-color: #55F991;
+}
+
+
+.box1, .box2 {
+    border: 1px solid black;
+}
+
+#border {
+  border-bottom: 1px #2F3E53 solid;
 }
