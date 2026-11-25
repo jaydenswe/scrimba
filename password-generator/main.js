@@ -21,7 +21,6 @@ function generatePassword() {
         password1 += characters[randomNum] 
         password2 += characters[randomNum1]
     }
-    console.log(password1)
     password1El.textContent = password1
     password2El.textContent = password2
 }

@@ -11,6 +11,11 @@ p {
   color: black;
 }
 
+.container p {
+  color: #D5D4D8;
+  font-size:  20px;;
+}
+
 .passwords p:not(:empty) {
     background-color: #273549;
     padding: 10px;
@@ -31,9 +36,10 @@ p {
   background-color: #10B981;
   border: 0;
   border-radius: 5px;
-  padding: 8px 10px;
+  padding: 10px 15px;
   color: white;
   font-family: inherit;
+  font-size: 15px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -57,10 +63,10 @@ p {
   flex: 1;
 }
 
-
-/* .box1, .box2 {
-    border: 1px solid black;
-} */
+.passwords p {
+  flex: 1;
+  text-align: center;
+}
 
 #border {
   border-bottom: 1px #2F3E53 solid;
