@@ -7,6 +7,7 @@ let btnEl = document.getElementById("btn")
 let password1El = document.getElementById("password1")
 let password2El = document.getElementById("password2")
 let textEl = document.getElementById("txt")
+let notificationEl = document.getElementById("copied-notification")
 
 // Create function to create password
 function generatePassword() {
@@ -24,23 +25,33 @@ function generatePassword() {
         password1 += characters[randomNum] 
         password2 += characters[randomNum1]
     }
+    // Manipulate DOM to reflect the generated passwords
     password1El.textContent = password1
     password2El.textContent = password2
 }
 
-function copyToClipboard(password) {
-    navigator.clipboard.writeText(password.textContent)
+// Create function that takes an input and copies the text of the password to the clipboard
+function copyToClipboard(passwordEl) {
+    // This is what MDN listed as the copy to clipboard functionality
+    navigator.clipboard.writeText(passwordEl.textContent)
+    // Create string that informs user that text has been copied
+    let copied = "Your text has been copied to the clipboard!"
+    // Assign this message to the DOM
+    notificationEl.textContent = copied
 }
 
 // This makes the html button interactive
 btnEl.addEventListener("click", function() {
+    // Call function that generates passwords
     generatePassword()
 })
 
 password1El.addEventListener("click", function() {
+    // Call function to copy to clipboard with the password element passed in as a parameter
     copyToClipboard(password1El)
 })
 
 password2El.addEventListener("click", function() {
+    // Call function to copy to clipboard with the password element passed in as a parameter
     copyToClipboard(password2El)
 })
