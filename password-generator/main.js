@@ -28,7 +28,19 @@ function generatePassword() {
     password2El.textContent = password2
 }
 
+function copyToClipboard(password) {
+    navigator.clipboard.writeText(password.textContent)
+}
+
 // This makes the html button interactive
 btnEl.addEventListener("click", function() {
     generatePassword()
+})
+
+password1El.addEventListener("click", function() {
+    copyToClipboard(password1El)
+})
+
+password2El.addEventListener("click", function() {
+    copyToClipboard(password2El)
 })
